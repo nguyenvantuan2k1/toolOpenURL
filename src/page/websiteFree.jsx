@@ -28,7 +28,7 @@ const WebsiteFree = () => {
   // rowSelection object indicates the need for row selection
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
-      setPageOpen(selectedRows);
+      setPageOpen(selectedRows);      
     },
     getCheckboxProps: (record) => ({
       disabled: record.name === "Disabled User",
