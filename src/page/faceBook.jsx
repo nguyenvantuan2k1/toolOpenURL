@@ -39,7 +39,7 @@ const FaceBook = () => {
   // rowSelection object indicates the need for row selection
   const rowSelection = {
     onChange: (selectedRowKeys, selectedRows) => {
-      setPageOpen(selectedRowKeys);
+      setPageOpen(selectedRows);
     },
     getCheckboxProps: (record) => ({
       disabled: record.name === "Disabled User",
